@@ -1,0 +1,40 @@
+
+:root{
+    --bg-color: #000;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 62.5%;
+}
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+.picture img{
+    width: 25vw;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.picture-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
